@@ -1,0 +1,20 @@
+
+{
+  "sidebar": {
+    "home": "Início",
+    "textGenerator": "WordUp",
+    "imageCaptioner": "Legendas",
+    "textToImage": "Impulsione sua imaginação",
+    "accessibility": "Acessibilidade",
+    "theme": "Tema",
+    "settings": "Configurações"
+  },
+  "header": {
+    "tagline": "Seu amigo criador de conteúdo baseado em LLM da Team ACE.",
+    "selectLanguage": "Selecionar idioma",
+    "userMenu": "Menu do usuário",
+    "profile": "Perfil",
+    "logout": "Sair",
+    "toggleSidebar": "Alternar barra lateral"
+  }
+}

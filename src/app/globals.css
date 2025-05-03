@@ -1,0 +1,498 @@
+/*
+  Load custom fonts here. Ensure these match the families defined in tailwind.config.ts
+  and the options in accessibility-controls.tsx.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lexend:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap'); /* Note: Arial is typically a system font, but adding for completeness if needed */
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap'); /* Note: Times New Roman is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Courier+New&display=swap'); /* Note: Courier New is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap'); /* Note: Georgia is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Verdana&display=swap'); /* Note: Verdana is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Garamond&display=swap'); /* Note: Garamond might need specific loading */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap'); /* Note: Helvetica is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap'); /* Note: Comic Sans MS is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Impact&display=swap'); /* Note: Impact is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Lucida+Console&display=swap'); /* Note: Lucida Console is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Palatino&display=swap'); /* Note: Palatino might need specific loading */
+@import url('https://fonts.googleapis.com/css2?family=Tahoma&display=swap'); /* Note: Tahoma is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap'); /* Note: Trebuchet MS is typically a system font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*
+  IMPORTANT: For OpenDyslexic, you need to host the font files yourself (download from opendyslexic.org)
+  and create a CSS file (e.g., public/fonts/opendyslexic/opendyslexic.css) to define the @font-face rules.
+  Then import it like this:
+  @import url('/fonts/opendyslexic/opendyslexic.css');
+  Make sure this import is also at the top with other font imports if used.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  /* Default font is now primarily set by Tailwind base/config and layout.tsx */
+}
+
+
+@layer base {
+  :root {
+    /* Light Theme (Deep Blue Accent) - Default */
+    --background: 0 0% 98%;      /* Almost White */
+    --foreground: 240 10% 3.9%;  /* Dark Gray */
+    --card: 0 0% 100%;         /* White */
+    --card-foreground: 240 10% 3.9%; /* Dark Gray */
+    --popover: 0 0% 100%;      /* White */
+    --popover-foreground: 240 10% 3.9%; /* Dark Gray */
+    --primary: 208.7,100%,18.04%;     /* Deep Blue (#1B03A3) */
+    --primary-foreground: 0 0% 98%; /* Almost White */
+    --secondary: 240 4.8% 95.9%; /* Light Gray */
+    --secondary-foreground: 240 5.9% 10%; /* Dark Gray */
+    --muted: 240 4.8% 95.9%;      /* Light Gray */
+    --muted-foreground: 240 3.8% 46.1%; /* Medium Gray */
+    --accent: 208.7,100%,18.04%;     /* Deep Blue (#1B03A3) */
+    --accent-foreground: 0 0% 98%; /* Almost White */
+    --destructive: 0 84.2% 60.2%; /* Default Red */
+    --destructive-foreground: 0 0% 98%; /* Default light text */
+    --border: 240 5.9% 90%;     /* Light Gray Border */
+    --input: 240 5.9% 90%;      /* Light Gray Input Border */
+    --ring: 208.7,100%,18.04%;       /* Deep Blue Ring */
+
+    --brand-highlight: 180 70% 40%; /* Teal - kept for potential future use */
+
+    --chart-1: 248 70% 50%; /* Deep Blue variations */
+    --chart-2: 248 60% 60%;
+    --chart-3: 248 50% 70%;
+    --chart-4: 248 40% 80%;
+    --chart-5: 248 30% 90%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors adjusted to complement the theme */
+    --sidebar-background: 0 0% 100%; /* White sidebar background */
+    --sidebar-foreground: 240 10% 3.9%; /* Dark gray text */
+    --sidebar-primary: 248 95% 33%;    /* Deep Blue */
+    --sidebar-primary-foreground: 0 0% 98%; /* Almost White */
+    --sidebar-accent: 240 4.8% 95.9%;    /* Light gray accent */
+    --sidebar-accent-foreground: 240 5.9% 10%; /* Dark text */
+    --sidebar-border: 240 5.9% 90%;    /* Light gray border */
+    --sidebar-ring: 248 95% 33%;       /* Deep Blue ring */
+
+    /* Spacing Variables - Default Values */
+    --letter-spacing: normal;
+    --word-spacing: normal;
+    --line-height: normal; /* Default browser line height */
+    --spacing-xs: 0.25rem; /* 4px */
+    --spacing-sm: 0.5rem;  /* 8px */
+    --spacing-md: 1rem;    /* 16px */
+    --spacing-lg: 1.5rem;  /* 24px */
+    --spacing-xl: 2rem;    /* 32px */
+  }
+
+  .dark {
+    /* Dark Theme (Midnight Hues) - Kept for Theme Toggle */
+    --background: 240 10% 10%; /* Deep Navy/Midnight Blue */
+    --foreground: 220 20% 95%; /* Light cool gray/off-white */
+    --card: 240 10% 15%;       /* Slightly lighter deep blue */
+    --card-foreground: 220 20% 95%; /* Light cool gray text */
+    --popover: 240 10% 13%;    /* Darker popover */
+    --popover-foreground: 220 20% 95%; /* Light cool gray text */
+    --primary: 248 80% 70%;    /* Brighter Deep Blue for contrast */
+    --primary-foreground: 240 10% 5%; /* Very dark text */
+    --secondary: 240 8% 20%;      /* Darker Gray-Blue */
+    --secondary-foreground: 220 15% 90%; /* Light gray text */
+    --muted: 240 8% 25%;         /* Slightly lighter Gray-Blue */
+    --muted-foreground: 220 15% 70%; /* Medium light gray text */
+    --accent: 248 80% 70%;     /* Brighter Deep Blue */
+    --accent-foreground: 240 10% 5%; /* Very dark text on accent */
+    --destructive: 0 70% 60%;   /* Adjusted dark red */
+    --destructive-foreground: 0 0% 98%; /* Light text */
+    --border: 240 8% 25%;         /* Dark Gray-Blue border */
+    --input: 240 8% 28%;          /* Dark Gray-Blue input border */
+    --ring: 248 80% 70%;       /* Brighter Deep Blue ring */
+
+    --brand-highlight: 180 60% 50%; /* Teal */
+
+    --chart-1: 248 60% 75%; /* Brighter Blue variations */
+    --chart-2: 248 50% 85%;
+    --chart-3: 248 40% 80%;
+    --chart-4: 248 30% 90%;
+    --chart-5: 248 20% 70%;
+
+    /* Sidebar dark colors */
+    --sidebar-background: 240 10% 8%; /* Even darker Navy */
+    --sidebar-foreground: 220 20% 95%; /* Light cool gray text */
+    --sidebar-primary: 248 80% 70%;   /* Brighter Deep Blue */
+    --sidebar-primary-foreground: 240 10% 5%; /* Dark text */
+    --sidebar-accent: 240 8% 18%;     /* Dark accent */
+    --sidebar-accent-foreground: 220 15% 90%; /* Light text */
+    --sidebar-border: 240 8% 25%;     /* Dark Gray-Blue border */
+    --sidebar-ring: 248 80% 70%;       /* Brighter Deep Blue ring */
+
+    /* Dark Spacing (usually same as light, but could be overridden) */
+    --letter-spacing: normal;
+    --word-spacing: normal;
+    --line-height: normal;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+  /* Other themes kept for Theme Toggle */
+  .greenish-blue {
+    --background: 175 40% 96%;
+    --foreground: 180 25% 15%;
+    --card: 180 30% 98%;
+    --card-foreground: 180 25% 15%;
+    --popover: 180 30% 98%;
+    --popover-foreground: 180 25% 15%;
+    --primary: 180 70% 40%;
+    --primary-foreground: 180 10% 98%;
+    --secondary: 175 30% 92%;
+    --secondary-foreground: 180 20% 10%;
+    --muted: 175 35% 95%;
+    --muted-foreground: 180 15% 45%;
+    --accent: 195 70% 55%;
+    --accent-foreground: 195 10% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 175 25% 88%;
+    --input: 175 25% 88%;
+    --ring: 180 70% 40%;
+    --brand-highlight: 180 70% 40%;
+    --chart-1: 180 60% 50%;
+    --chart-2: 180 50% 60%;
+    --chart-3: 195 60% 65%;
+    --chart-4: 195 50% 75%;
+    --chart-5: 170 50% 55%;
+    --sidebar-background: 175 35% 97%;
+    --sidebar-foreground: 180 25% 15%;
+    --sidebar-primary: 180 70% 40%;
+    --sidebar-primary-foreground: 180 10% 98%;
+    --sidebar-accent: 175 30% 92%;
+    --sidebar-accent-foreground: 180 20% 10%;
+    --sidebar-border: 175 25% 88%;
+    --sidebar-ring: 180 70% 40%;
+    --letter-spacing: normal;
+    --word-spacing: normal;
+    --line-height: normal;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+  .creamy {
+    --background: 45 50% 96%;
+    --foreground: 40 20% 20%;
+    --card: 45 40% 98%;
+    --card-foreground: 40 20% 20%;
+    --popover: 45 40% 98%;
+    --popover-foreground: 40 20% 20%;
+    --primary: 35 65% 55%;
+    --primary-foreground: 35 10% 98%;
+    --secondary: 40 35% 92%;
+    --secondary-foreground: 40 15% 10%;
+    --muted: 40 45% 95%;
+    --muted-foreground: 40 15% 45%;
+    --accent: 15 70% 60%;
+    --accent-foreground: 15 10% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 30% 88%;
+    --input: 40 30% 88%;
+    --ring: 35 65% 55%;
+    --brand-highlight: 180 70% 40%;
+    --chart-1: 35 55% 65%;
+    --chart-2: 35 45% 75%;
+    --chart-3: 15 60% 70%;
+    --chart-4: 15 50% 80%;
+    --chart-5: 50 50% 60%;
+    --sidebar-background: 45 45% 97%;
+    --sidebar-foreground: 40 20% 20%;
+    --sidebar-primary: 35 65% 55%;
+    --sidebar-primary-foreground: 35 10% 98%;
+    --sidebar-accent: 40 35% 92%;
+    --sidebar-accent-foreground: 40 15% 10%;
+    --sidebar-border: 40 30% 88%;
+    --sidebar-ring: 35 65% 55%;
+    --letter-spacing: normal;
+    --word-spacing: normal;
+    --line-height: normal;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+  .greyish-black {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 85%;
+    --card: 0 0% 18%;
+    --card-foreground: 0 0% 85%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 85%;
+    --primary: 0 0% 60%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 25%;
+    --secondary-foreground: 0 0% 80%;
+    --muted: 0 0% 30%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 70%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 30%;
+    --input: 0 0% 35%;
+    --ring: 0 0% 65%;
+    --brand-highlight: 180 60% 50%;
+    --chart-1: 0 0% 70%;
+    --chart-2: 0 0% 60%;
+    --chart-3: 0 0% 50%;
+    --chart-4: 0 0% 40%;
+    --chart-5: 0 0% 80%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 0 0% 60%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 0 0% 22%;
+    --sidebar-accent-foreground: 0 0% 80%;
+    --sidebar-border: 0 0% 30%;
+    --sidebar-ring: 0 0% 65%;
+    --letter-spacing: normal;
+    --word-spacing: normal;
+    --line-height: normal;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+  /* New Turquoise Theme */
+  .turquoise {
+    --background: 180 100% 97%;  /* Light Cyan/Turquoise tint */
+    --foreground: 180 30% 20%;   /* Dark Cyan/Turquoise shade */
+    --card: 180 100% 100%;    /* White */
+    --card-foreground: 180 30% 20%; /* Dark Cyan/Turquoise shade */
+    --popover: 180 100% 100%;   /* White */
+    --popover-foreground: 180 30% 20%; /* Dark Cyan/Turquoise shade */
+    --primary: 175 70% 45%;    /* Bright Turquoise */
+    --primary-foreground: 180 10% 98%; /* Almost White */
+    --secondary: 180 60% 92%;    /* Lighter Turquoise/Cyan */
+    --secondary-foreground: 180 25% 15%; /* Darker Cyan */
+    --muted: 180 60% 95%;       /* Very Light Turquoise/Cyan */
+    --muted-foreground: 180 15% 50%; /* Medium Gray-Cyan */
+    --accent: 190 75% 50%;     /* Slightly Bluer Turquoise */
+    --accent-foreground: 190 10% 98%; /* Almost White */
+    --destructive: 0 75% 55%;   /* Default Red */
+    --destructive-foreground: 0 0% 98%; /* Default light text */
+    --border: 180 40% 88%;      /* Light Gray-Cyan Border */
+    --input: 180 40% 88%;       /* Light Gray-Cyan Input Border */
+    --ring: 175 70% 45%;        /* Bright Turquoise Ring */
+
+    --brand-highlight: 190 75% 50%; /* Bluer Turquoise highlight */
+
+    --chart-1: 175 65% 55%; /* Turquoise variations */
+    --chart-2: 180 60% 65%;
+    --chart-3: 190 70% 60%;
+    --chart-4: 190 60% 70%;
+    --chart-5: 170 60% 50%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors adjusted for Turquoise theme */
+    --sidebar-background: 180 80% 98%; /* Very Light Turquoise */
+    --sidebar-foreground: 180 30% 20%; /* Dark Cyan/Turquoise */
+    --sidebar-primary: 175 70% 45%;   /* Bright Turquoise */
+    --sidebar-primary-foreground: 180 10% 98%; /* Almost White */
+    --sidebar-accent: 180 60% 92%;   /* Lighter Turquoise accent */
+    --sidebar-accent-foreground: 180 25% 15%; /* Darker Cyan */
+    --sidebar-border: 180 40% 88%;   /* Light Gray-Cyan border */
+    --sidebar-ring: 175 70% 45%;      /* Bright Turquoise ring */
+
+    /* Spacing Variables */
+    --letter-spacing: normal;
+    --word-spacing: normal;
+    --line-height: normal;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+   /* New Lavender Theme */
+  .lavender {
+    --background: 260 60% 97%; /* Very Light Lavender */
+    --foreground: 260 30% 25%; /* Dark Muted Purple */
+    --card: 260 50% 100%; /* White with a slight lavender tint */
+    --card-foreground: 260 30% 25%;
+    --popover: 260 50% 100%;
+    --popover-foreground: 260 30% 25%;
+    --primary: 260 70% 60%; /* Mid Lavender */
+    --primary-foreground: 260 10% 98%; /* Almost White */
+    --secondary: 260 50% 93%; /* Light Lavender */
+    --secondary-foreground: 260 25% 18%; /* Darker Purple */
+    --muted: 260 50% 96%; /* Very Pale Lavender */
+    --muted-foreground: 260 15% 55%; /* Medium Gray-Purple */
+    --accent: 275 75% 65%; /* Slightly more vibrant Purple */
+    --accent-foreground: 275 10% 98%; /* Almost White */
+    --destructive: 0 75% 55%; /* Default Red */
+    --destructive-foreground: 0 0% 98%;
+    --border: 260 40% 90%; /* Light Gray-Lavender Border */
+    --input: 260 40% 90%;
+    --ring: 260 70% 60%; /* Mid Lavender Ring */
+
+    --brand-highlight: 275 75% 65%;
+
+    --chart-1: 260 65% 70%; /* Lavender variations */
+    --chart-2: 260 55% 80%;
+    --chart-3: 275 70% 75%;
+    --chart-4: 275 60% 85%;
+    --chart-5: 250 60% 65%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors */
+    --sidebar-background: 260 60% 98%; /* Very Light Lavender */
+    --sidebar-foreground: 260 30% 25%;
+    --sidebar-primary: 260 70% 60%;
+    --sidebar-primary-foreground: 260 10% 98%;
+    --sidebar-accent: 260 50% 93%;
+    --sidebar-accent-foreground: 260 25% 18%;
+    --sidebar-border: 260 40% 90%;
+    --sidebar-ring: 260 70% 60%;
+
+    /* Spacing Variables */
+    --letter-spacing: normal;
+    --word-spacing: normal;
+    --line-height: normal;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+  /* New High Contrast Theme */
+  .high-contrast {
+    --background: 0 0% 5%;     /* Very Dark Grey / Almost Black */
+    --foreground: 0 0% 98%;     /* Almost White */
+    --card: 0 0% 10%;          /* Dark Grey */
+    --card-foreground: 0 0% 98%; /* Almost White */
+    --popover: 0 0% 8%;        /* Slightly Lighter Dark Grey */
+    --popover-foreground: 0 0% 98%; /* Almost White */
+    --primary: 60 100% 50%;    /* Bright Yellow */
+    --primary-foreground: 0 0% 5%; /* Very Dark Text on Yellow */
+    --secondary: 0 0% 15%;     /* Dark Grey */
+    --secondary-foreground: 0 0% 90%; /* Light Grey */
+    --muted: 0 0% 20%;         /* Dark Grey */
+    --muted-foreground: 0 0% 70%; /* Medium Grey */
+    --accent: 60 100% 50%;     /* Bright Yellow */
+    --accent-foreground: 0 0% 5%; /* Very Dark Text on Yellow */
+    --destructive: 0 100% 50%; /* Bright Red */
+    --destructive-foreground: 0 0% 98%; /* Almost White */
+    --border: 0 0% 40%;        /* Medium Grey Border */
+    --input: 0 0% 30%;         /* Dark Grey Input Border */
+    --ring: 60 100% 50%;       /* Bright Yellow Ring */
+
+    --brand-highlight: 60 100% 50%; /* Bright Yellow */
+
+    --chart-1: 60 90% 60%; /* Yellow variations */
+    --chart-2: 60 80% 70%;
+    --chart-3: 60 70% 80%;
+    --chart-4: 0 0% 80%;   /* Light grey for contrast */
+    --chart-5: 0 0% 60%;   /* Medium grey for contrast */
+
+    --radius: 0rem; /* Sharp corners for high contrast */
+
+    /* Sidebar colors for High Contrast */
+    --sidebar-background: 0 0% 3%;  /* Even Darker Black */
+    --sidebar-foreground: 0 0% 98%; /* Almost White */
+    --sidebar-primary: 60 100% 50%; /* Bright Yellow */
+    --sidebar-primary-foreground: 0 0% 5%; /* Dark Text */
+    --sidebar-accent: 0 0% 12%;    /* Dark Accent */
+    --sidebar-accent-foreground: 0 0% 90%; /* Light Grey */
+    --sidebar-border: 0 0% 30%;    /* Dark Grey Border */
+    --sidebar-ring: 60 100% 50%;   /* Bright Yellow Ring */
+
+    /* Spacing Variables */
+    --letter-spacing: normal;
+    --word-spacing: normal;
+    --line-height: normal;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html { /* Apply font style to html for global effect */
+     /* The font-family will be applied via classes added in accessibility-controls.tsx */
+     /* Default font set via Tailwind config (font-sans) */
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Apply spacing variables */
+    letter-spacing: var(--letter-spacing, normal);
+    line-height: var(--line-height, normal);
+    word-spacing: var(--word-spacing, normal);
+    /* Default values if variables aren't set */
+  }
+
+  /* Apply spacing to common elements (adjust selectors as needed) */
+  p, ul, ol, blockquote, .content-target { /* Added .content-target or similar class */
+    margin-bottom: var(--spacing-md); /* Example: Apply medium bottom margin */
+    /* Apply specific spacing controls */
+    letter-spacing: var(--letter-spacing, normal);
+    line-height: var(--line-height, normal);
+    word-spacing: var(--word-spacing, normal);
+  }
+  h1, h2, h3, h4, h5, h6 {
+     margin-bottom: var(--spacing-sm); /* Example: Apply small bottom margin */
+     /* Ensure headings use theme color */
+     @apply text-foreground;
+     /* Apply specific spacing controls */
+     letter-spacing: var(--letter-spacing, normal);
+     line-height: var(--line-height, normal);
+     word-spacing: var(--word-spacing, normal);
+  }
+
+  /* Ensure input/textarea also respect spacing where applicable (though browser defaults often handle this) */
+  input, textarea {
+     letter-spacing: var(--letter-spacing, normal);
+     word-spacing: var(--word-spacing, normal);
+     /* Line height is often handled differently in inputs */
+  }
+}
+
+/* Add subtle hover effects for interactive elements like buttons */
+@layer components {
+   .btn-hover-subtle {
+     @apply transition-colors duration-200 ease-in-out;
+     /* Example: Slightly darken primary on hover */
+     /* Adjust based on actual primary/accent */
+     /* &:hover { filter: brightness(95%); } */
+   }
+}
+
+/* Fix for the rogue import statement */

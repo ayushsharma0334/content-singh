@@ -1,0 +1,20 @@
+
+{
+  "sidebar": {
+    "home": "Главная",
+    "textGenerator": "WordUp",
+    "imageCaptioner": "Подписи",
+    "textToImage": "Разбуди свое воображение",
+    "accessibility": "Доступность",
+    "theme": "Тема",
+    "settings": "Настройки"
+  },
+  "header": {
+    "tagline": "Ваш друг-создатель контента на базе LLM от Team ACE.",
+    "selectLanguage": "Выберите язык",
+    "userMenu": "Меню пользователя",
+    "profile": "Профиль",
+    "logout": "Выйти",
+    "toggleSidebar": "Переключить боковую панель"
+  }
+}

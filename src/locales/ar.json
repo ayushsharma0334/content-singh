@@ -1,0 +1,20 @@
+
+{
+  "sidebar": {
+    "home": "الصفحة الرئيسية",
+    "textGenerator": "WordUp",
+    "imageCaptioner": "التسميات التوضيحية",
+    "textToImage": "ادفع خيالك",
+    "accessibility": "إمكانية الوصول",
+    "theme": "المظهر",
+    "settings": "الإعدادات"
+  },
+  "header": {
+    "tagline": "صديقك منشئ المحتوى القائم على LLM بواسطة فريق ACE.",
+    "selectLanguage": "اختر اللغة",
+    "userMenu": "قائمة المستخدم",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "toggleSidebar": "تبديل الشريط الجانبي"
+  }
+}
